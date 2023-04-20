@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+/* General style */
+
 *,
-*::after,
-*::before {
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,6 +13,10 @@
 body {
   background-color: #020410;
 }
+
+/* End General Style */
+
+/* Header Style */
 
 .header {
   position: fixed;
@@ -94,3 +99,74 @@ body {
   font-size: 22px;
   color: #e4e4e4;
 }
+
+/* End Header Style */
+
+/* Main Style */
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url('assets/romain-gal.jpg') no-repeat;
+  background-size: cover;
+  width: 75%;
+  height: 550px;
+  background-position: center center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.container .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58%;
+  height: 100%;
+  background-color: transparent;
+  padding: 80px;
+  color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .content .logo {
+  font-size: 30px;
+}
+
+.content .text_sci h2 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.content .text_sci h2 span {
+  font-size: 25px;
+}
+
+.content .text_sci p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.socials a i {
+  font-size: 25px;
+  color: #e4e4e4;
+  margin-right: 10px;
+  transition: .5s ease;
+}
+
+.socials a:hover i {
+  transform: scale(1.2);
+}
+
+.container .logreg_box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 58%);
+  height: 100%;
+}
+
+/* End Main Style */
