@@ -182,6 +182,7 @@ body {
 }
 
 .logreg_box .form_box {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,6 +193,10 @@ body {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   color: #e4e4e4;
+}
+
+.logreg_box .form_box.register {
+  transform: translateX(430px);
 }
 
 .form_box h2 {
