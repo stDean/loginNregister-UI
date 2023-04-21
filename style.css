@@ -179,6 +179,7 @@ body {
   right: 0;
   width: calc(100% - 58%);
   height: 100%;
+  overflow: hidden;
 }
 
 .logreg_box .form_box {
@@ -195,8 +196,26 @@ body {
   color: #e4e4e4;
 }
 
+.logreg_box .form_box.login {
+  transform: translateX(0px);
+  transition: transform .6s ease;
+  transition-delay: .7s;
+}
+
+.logreg_box.active .form_box.login {
+  transform: translateX(430px);
+  transition-delay: 0s;
+}
+
 .logreg_box .form_box.register {
   transform: translateX(430px);
+  transition: transform .6s ease;
+  transition-delay: 0s;
+}
+
+.logreg_box.active .form_box.register {
+  transform: translateX(0px);
+  transition-delay: .7s;
 }
 
 .form_box h2 {
